@@ -9,7 +9,7 @@ trait Testcase {
 }
 
 object Main {
-  val TESTCASES = Map[String, Testcase]("hello" -> new Hello())
+  val TESTCASES = Map[String, Testcase]("hello" -> new Hello(), "spark" -> new Spark(), "geometry" -> new Geometry())
 
   def main(args: Array[String]) {
     val parser = new OptionParser[TestConfig]("testcases") {
